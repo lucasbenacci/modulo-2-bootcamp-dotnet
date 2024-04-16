@@ -7,6 +7,19 @@ namespace Modulo2_aulas.Models
 {
     public class Pessoa
     {
+        //Não existe limite para ciração de tipo de construtores
+        //método construtor no qual não exige os argumentos
+        public Pessoa()
+        {
+
+        }
+
+        //método construtor deve ter o mesmo nome da classe
+        public Pessoa(string nome, string sobrenome)
+        {
+
+        }
+
         private string _nome;
         private string _sobrenome;
         private int _idade;
