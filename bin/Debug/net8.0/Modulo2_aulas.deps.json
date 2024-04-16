@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Modulo2_aulas/1.0.0": {
+        "runtime": {
+          "Modulo2_aulas.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Modulo2_aulas/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
