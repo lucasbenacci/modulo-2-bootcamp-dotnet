@@ -8,6 +8,7 @@ namespace Modulo2_aulas.Models
     public class Pessoa
     {
         private string _nome;
+        private string _sobrenome;
         private int _idade;
         public string Nome 
         { 
@@ -22,6 +23,23 @@ namespace Modulo2_aulas.Models
                 _nome = value;
             }
         }
+
+        public string Sobrenome
+        { 
+            get => _sobrenome.ToUpper();
+
+            set
+            {
+                if(value == "")
+                {
+                    throw new ArgumentException("O sobrenome não pode ser vazio");
+                }
+                _sobrenome = value;
+            } 
+        }
+        
+        public string NomeCompleto => $"{Nome} {Sobrenome}";
+
         public int Idade
         { 
             get =>  _idade;
@@ -37,7 +55,7 @@ namespace Modulo2_aulas.Models
 
         public void Apresentar()
         {
-            Console.WriteLine($"Nome: {Nome}, Idade: {Idade}");
+            Console.WriteLine($"Nome: {NomeCompleto}, Idade: {Idade}");
         }
     }
 }

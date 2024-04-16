@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Dev\\Modulo2_aulas\\Modulo2_aulas.csproj": {}
+    "C:\\Dev\\Modulo2_aulas\\Modulo2BootcampDotnet\\Modulo2_aulas.csproj": {}
   },
   "projects": {
-    "C:\\Dev\\Modulo2_aulas\\Modulo2_aulas.csproj": {
+    "C:\\Dev\\Modulo2_aulas\\Modulo2BootcampDotnet\\Modulo2_aulas.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Dev\\Modulo2_aulas\\Modulo2_aulas.csproj",
+        "projectUniqueName": "C:\\Dev\\Modulo2_aulas\\Modulo2BootcampDotnet\\Modulo2_aulas.csproj",
         "projectName": "Modulo2_aulas",
-        "projectPath": "C:\\Dev\\Modulo2_aulas\\Modulo2_aulas.csproj",
+        "projectPath": "C:\\Dev\\Modulo2_aulas\\Modulo2BootcampDotnet\\Modulo2_aulas.csproj",
         "packagesPath": "C:\\Users\\lucas.souza\\.nuget\\packages\\",
-        "outputPath": "C:\\Dev\\Modulo2_aulas\\obj\\",
+        "outputPath": "C:\\Dev\\Modulo2_aulas\\Modulo2BootcampDotnet\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\lucas.souza\\AppData\\Roaming\\NuGet\\NuGet.Config"
