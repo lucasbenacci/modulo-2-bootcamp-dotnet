@@ -2,8 +2,9 @@
 using Modulo2BootcampDotnet.Models;
 
 //instanciando a classe Pessoa
-Pessoa p1 = new Pessoa("Lucas", "Souza");
-Pessoa p2 = new Pessoa("Claudio", "Azevedo");
+//Não é necessário indicar o parametro, porém facilita a visualização.
+Pessoa p1 = new Pessoa(nome:"Lucas", sobrenome:"Souza");
+Pessoa p2 = new Pessoa(nome:"Claudio", sobrenome:"Azevedo");
 
 
 //instanciando a classe Curso
