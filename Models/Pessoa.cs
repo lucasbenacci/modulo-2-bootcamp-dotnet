@@ -17,7 +17,9 @@ namespace Modulo2_aulas.Models
         //método construtor deve ter o mesmo nome da classe
         public Pessoa(string nome, string sobrenome)
         {
-
+            //O nome em maiúsculo se refere a propriedade
+            Nome = nome;
+            Sobrenome = sobrenome;
         }
 
         private string _nome;

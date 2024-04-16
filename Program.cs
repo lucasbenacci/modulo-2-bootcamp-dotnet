@@ -2,13 +2,9 @@
 using Modulo2BootcampDotnet.Models;
 
 //instanciando a classe Pessoa
-Pessoa p1 = new Pessoa();
-p1.Nome = "Lucas";
-p1.Sobrenome = "Souza";
+Pessoa p1 = new Pessoa("Lucas", "Souza");
+Pessoa p2 = new Pessoa("Claudio", "Azevedo");
 
-Pessoa p2 = new Pessoa();
-p2.Nome = "Claudio";
-p2.Sobrenome = "Azevedo";
 
 //instanciando a classe Curso
 Curso cursoDeIngles = new Curso();
