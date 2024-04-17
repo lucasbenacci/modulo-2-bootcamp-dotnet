@@ -35,9 +35,10 @@ namespace Modulo2BootcampDotnet.Models
         public void ListarAluno()
         {
             Console.WriteLine($"Alunos do curso {Nome}");
-            foreach (Pessoa aluno in Alunos)
+            
+            for (int i = 0; i < Alunos.Count; i++)
             {
-                Console.WriteLine(aluno.NomeCompleto);
+                Console.WriteLine($"Nº{i+1} - {Alunos[i].NomeCompleto}");
             }
         }
     }

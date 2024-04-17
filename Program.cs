@@ -9,7 +9,7 @@ Pessoa p2 = new Pessoa(nome:"Claudio", sobrenome:"Azevedo");
 
 //instanciando a classe Curso
 Curso cursoDeIngles = new Curso();
-cursoDeIngles.Nome = "Ingles";
+cursoDeIngles.Nome = "Inglês";
 //instanciando a lista Pessoa, criando ela vazia
 cursoDeIngles.Alunos = new List<Pessoa>();
 
