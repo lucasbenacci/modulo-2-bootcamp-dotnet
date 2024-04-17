@@ -1,6 +1,6 @@
 ﻿using Modulo2_aulas.Models;
 using Modulo2BootcampDotnet.Models;
-//Troco a configuração do sistema para a localização desejada.
+//Troco a cultura do sistema para a localização desejada.
 using System.Globalization;
 CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("en-us");
 
@@ -37,5 +37,11 @@ decimal valorMonetario = 82.40M;
 
 //:C formata de acordo com a configuração local, c = currency 
 Console.WriteLine($"{valorMonetario:C}");
+//formatando para uma cultura especifica
+Console.WriteLine(valorMonetario.ToString("C", CultureInfo.CreateSpecificCulture("pt-br")));
 
+Console.WriteLine("---------------------------------------");
 
+double pc = .3521;
+
+Console.WriteLine(pc.ToString("P"));
