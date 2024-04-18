@@ -45,3 +45,12 @@ Console.WriteLine("---------------------------------------");
 double pc = .3521;
 
 Console.WriteLine(pc.ToString("P"));
+
+Console.WriteLine("---------------------------------------");
+
+string dataString = "2022-04-17 18:00";
+DateTime.TryParseExact(dataString, "yyyy-MM-dd HH:mm", CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime data);
+
+Console.WriteLine(data.ToString("dd/MM/yyyy HH:mm"));
+Console.WriteLine(data.ToShortDateString());
+Console.WriteLine(data.ToShortTimeString());
