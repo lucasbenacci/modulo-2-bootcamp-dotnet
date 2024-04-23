@@ -54,3 +54,52 @@ DateTime.TryParseExact(dataString, "yyyy-MM-dd HH:mm", CultureInfo.InvariantCult
 Console.WriteLine(data.ToString("dd/MM/yyyy HH:mm"));
 Console.WriteLine(data.ToShortDateString());
 Console.WriteLine(data.ToShortTimeString());
+
+Console.WriteLine("---------------------------------------");
+
+try{
+    //Posibilita a leita de arquivos externos.
+    string[] linhas = File.ReadAllLines("Files/arquivoLeitura.txt");
+
+    foreach(string linha in linhas)
+    {
+        Console.WriteLine(linha);
+    }
+//Pode-se utilizar quantos catchs forem necessários, relacionados a cada exception retornado por cada método.
+} catch (DirectoryNotFoundException e )
+{
+    Console.WriteLine($"Aqui deu merda! O diretório não foi encontrato. {e.Message}");
+} catch (FileNotFoundException e) 
+{
+    Console.WriteLine($"Aqui deu merda! O arquivo não foi encontrado. {e.Message}");
+} finally 
+{
+    Console.WriteLine("Chegou até aqui!");
+}
+
+Console.WriteLine("---------------------------------------");
+
+//como inicializar a fila
+//A fila funciona com FIFO (first in first out)
+Queue<int> f = new Queue<int>();
+
+//como adicionar valores na minha fila
+f.Enqueue(2);
+f.Enqueue(5);
+f.Enqueue(8);
+f.Enqueue(1);
+
+foreach(int i in f)
+{
+    Console.WriteLine(i);
+}
+
+//Retira o primeiro elemento da fila (FIFO funcionando)
+Console.WriteLine($"Proxima lista estou retirando o primeiro elemento: {f.Dequeue()}");
+
+foreach(int i in f)
+{
+    Console.WriteLine(i);
+}
+
+Console.WriteLine("---------------------------------------");
