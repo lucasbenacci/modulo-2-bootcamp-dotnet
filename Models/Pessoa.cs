@@ -21,6 +21,13 @@ namespace Modulo2_aulas.Models
             Nome = nome;
             Sobrenome = sobrenome;
         }
+        
+        //Metodo descontrutor
+        //o out representa um parametro de saída
+        public void Deconstruct(out string nome, out string sobrenome){
+            nome = Nome;
+            sobrenome = Sobrenome;
+        }
 
         private string _nome;
         private string _sobrenome;

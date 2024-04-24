@@ -224,3 +224,17 @@ if(Sucesso)
 }
 
 Console.WriteLine("---------------------------------------");
+
+Pessoa pn = new Pessoa("Miguel", "Borger");
+(string nome, string sobrenome) = pn;
+
+Console.WriteLine($"{nome} {sobrenome}");
+
+Console.WriteLine("---------------------------------------");
+
+int n = 52;
+bool par = false;
+
+//if ternário
+par = n % 2 == 0;
+Console.WriteLine($"O Número {n} é " + (par ? "par" : "impar"));
