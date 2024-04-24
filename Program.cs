@@ -179,10 +179,48 @@ Console.WriteLine(estados["SP"]);
 Console.WriteLine("---------------------------------------");
 
 //Implementando uma Tupla
-(int, string, string, decimal) t = (1, "Lucas", "Souza", 1.80M);
+(int, string, string, decimal) t = (1, "Lucas", "Souza", 1.83M);
+ValueTuple<int, string, string, decimal> t2 = (2, "Gabriel", "Borges", 1.75M);
+var t3 = Tuple.Create(3, "Fabricio", "Neves", 1.64M);
 
 //Como exibir os itens da minha Tupla
 Console.WriteLine($"ID: {t.Item1}");
 Console.WriteLine($"Nome: {t.Item2}");
 Console.WriteLine($"Sobrenome: {t.Item3}");
 Console.WriteLine($"Altura: {t.Item4}");
+
+Console.WriteLine(" ");
+Console.WriteLine("Outro Usuário: ");
+Console.WriteLine($"ID: {t2.Item1}");
+Console.WriteLine($"Nome: {t2.Item2}");
+Console.WriteLine($"Sobrenome: {t2.Item3}");
+Console.WriteLine($"Altura: {t2.Item4}");
+
+Console.WriteLine(" ");
+Console.WriteLine("Outro Usuário: ");
+Console.WriteLine($"ID: {t3.Item1}");
+Console.WriteLine($"Nome: {t3.Item2}");
+Console.WriteLine($"Sobrenome: {t3.Item3}");
+Console.WriteLine($"Altura: {t3.Item4}");
+
+Console.WriteLine("---------------------------------------");
+
+//instanciando a minha classe leitura arquivo
+LeituraArquivo arquivo = new LeituraArquivo();
+
+//guardando os valores retornados pela classe em uma tupla
+var (Sucesso, Linhas, quantidadeLinhas)  = arquivo.LerArquivo("Files/arquivoLeitura.txt");
+
+if(Sucesso)
+{
+    Console.WriteLine("Quantidade de linhas do arquivo:" + quantidadeLinhas);
+    foreach(string linha in Linhas)
+    {
+        Console.WriteLine(linha);
+    }
+}else
+{
+    Console.WriteLine("Não foi possível ler o arquivo!");
+}
+
+Console.WriteLine("---------------------------------------");
