@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Administrator\\Documents\\GitHub\\modulo-2-bootcamp-dotnet\\Modulo2_aulas.csproj": {}
+    "C:\\Dev\\Modulo2_aulas\\Modulo2BootcampDotnet\\Modulo2_aulas.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Administrator\\Documents\\GitHub\\modulo-2-bootcamp-dotnet\\Modulo2_aulas.csproj": {
+    "C:\\Dev\\Modulo2_aulas\\Modulo2BootcampDotnet\\Modulo2_aulas.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Administrator\\Documents\\GitHub\\modulo-2-bootcamp-dotnet\\Modulo2_aulas.csproj",
+        "projectUniqueName": "C:\\Dev\\Modulo2_aulas\\Modulo2BootcampDotnet\\Modulo2_aulas.csproj",
         "projectName": "Modulo2_aulas",
-        "projectPath": "C:\\Users\\Administrator\\Documents\\GitHub\\modulo-2-bootcamp-dotnet\\Modulo2_aulas.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Administrator\\Documents\\GitHub\\modulo-2-bootcamp-dotnet\\obj\\",
+        "projectPath": "C:\\Dev\\Modulo2_aulas\\Modulo2BootcampDotnet\\Modulo2_aulas.csproj",
+        "packagesPath": "C:\\Users\\lucas.souza\\.nuget\\packages\\",
+        "outputPath": "C:\\Dev\\Modulo2_aulas\\Modulo2BootcampDotnet\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\lucas.souza\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -58,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

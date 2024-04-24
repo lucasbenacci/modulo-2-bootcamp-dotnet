@@ -1,5 +1,7 @@
 ﻿using Modulo2_aulas.Models;
 using Modulo2BootcampDotnet.Models;
+using System.Data;
+
 //Troco a cultura do sistema para a localização desejada.
 using System.Globalization;
 CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("en-us");
@@ -79,6 +81,8 @@ try{
 
 Console.WriteLine("---------------------------------------");
 
+Console.WriteLine("Utilizando Queue (Fila)");
+Console.WriteLine(" ");
 //como inicializar a fila
 //A fila funciona com FIFO (first in first out)
 Queue<int> f = new Queue<int>();
@@ -94,6 +98,7 @@ foreach(int i in f)
     Console.WriteLine(i);
 }
 
+Console.WriteLine(" ");
 //Retira o primeiro elemento da fila (FIFO funcionando)
 Console.WriteLine($"Proxima lista estou retirando o primeiro elemento: {f.Dequeue()}");
 
@@ -103,3 +108,81 @@ foreach(int i in f)
 }
 
 Console.WriteLine("---------------------------------------");
+
+Console.WriteLine("Utilizando Stack (Pilha)");
+Console.WriteLine(" ");
+//A stack funciona como LIFO (Last in first out)
+//como inicializar a stack
+Stack<int> p = new Stack<int>();
+//adicionando valores na stack
+p.Push(2);
+p.Push(3);
+p.Push(8);
+p.Push(5);
+
+foreach(int i in p)
+{
+    Console.WriteLine(i);
+}
+
+Console.WriteLine(" ");
+Console.WriteLine($"Próxima lista estou retirando o elemento da minha stack: {p.Pop()}");
+
+foreach(int i in p)
+{
+    Console.WriteLine(i);
+}
+
+Console.WriteLine("---------------------------------------");
+
+Console.WriteLine("Implementando um dictionary: ");
+Console.WriteLine(" ");
+
+//Implementando o dictionary, o primeiro valor é a chave e o segundo valor, é o valor referente a chave em questão
+Dictionary<string, string> estados = new Dictionary<string, string>();
+estados.Add("SP", "São Paulo");
+estados.Add("BA", "Bahia");
+estados.Add("MG", "Minas Gerais");
+
+foreach(var item in estados)
+{
+    Console.WriteLine($"Chave: {item.Key} Valor: {item.Value}");
+}
+
+//Removendo um valor do meu dictionary
+estados.Remove("BA");
+
+//Alterando um valor do meu dictionary, o valor da key não pode ser alterado
+estados["SP"] = "São Paulo - Valor Alterado";
+
+Console.WriteLine(" ");
+foreach(var item in estados)
+{
+    Console.WriteLine($"Chave: {item.Key} Valor: {item.Value}");
+}
+
+//verificando se a chave já esta cadastrada
+string chave = "BA";
+Console.WriteLine("Verificando o elemento");
+if (estados.ContainsKey(chave))
+{
+    Console.WriteLine("Valor existente");
+}else
+{
+    Console.WriteLine($"Não existe, o valor {chave} pode se inserido");
+}
+
+Console.WriteLine(" ");
+//buscando um valor utilizando a key
+Console.WriteLine(estados["SP"]);
+
+Console.WriteLine("---------------------------------------");
+
+//Implementando uma Tupla
+(int, string, string, decimal) t = (1, "Lucas", "Souza", 1.80M);
+
+//Como exibir os itens da minha Tupla
+Console.WriteLine($"ID: {t.Item1}");
+Console.WriteLine($"Nome: {t.Item2}");
+Console.WriteLine($"Sobrenome: {t.Item3}");
+Console.WriteLine($"Altura: {t.Item4}");
