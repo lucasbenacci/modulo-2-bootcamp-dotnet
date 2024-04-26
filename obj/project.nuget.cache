@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "TrncvjMJZeXf+jflBpeCwTFgei6DhGkNJN6yyaN/uE0PX0AVgJ5Q7xYid62RwfoILNUAEn+vnzxHybefDfZDpw==",
+  "dgSpecHash": "J2myb0E0IOec8g0ELUbnvD8Al97jcLXGhxdHkFPilDOcMrHPp/82uZyCoNgZvIIUiWClaIa4+ovdqHodzUaLyA==",
   "success": true,
   "projectFilePath": "C:\\Dev\\Modulo2_aulas\\Modulo2BootcampDotnet\\Modulo2_aulas.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\lucas.souza\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

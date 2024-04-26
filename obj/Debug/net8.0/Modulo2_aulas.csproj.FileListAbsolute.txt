@@ -42,3 +42,6 @@ C:\Users\Administrator\Documents\GitHub\modulo-2-bootcamp-dotnet\obj\Debug\net8.
 C:\Users\Administrator\Documents\GitHub\modulo-2-bootcamp-dotnet\obj\Debug\net8.0\Modulo2_aulas.pdb
 C:\Users\Administrator\Documents\GitHub\modulo-2-bootcamp-dotnet\obj\Debug\net8.0\Modulo2_aulas.genruntimeconfig.cache
 C:\Users\Administrator\Documents\GitHub\modulo-2-bootcamp-dotnet\obj\Debug\net8.0\ref\Modulo2_aulas.dll
+C:\Dev\Modulo2_aulas\Modulo2BootcampDotnet\obj\Debug\net8.0\Modulo2_aulas.csproj.AssemblyReference.cache
+C:\Dev\Modulo2_aulas\Modulo2BootcampDotnet\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Dev\Modulo2_aulas\Modulo2BootcampDotnet\obj\Debug\net8.0\Modulo2_.8C140C4A.Up2Date

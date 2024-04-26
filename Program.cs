@@ -1,6 +1,7 @@
 ﻿using Modulo2_aulas.Models;
 using Modulo2BootcampDotnet.Models;
 using System.Data;
+using Newtonsoft.Json;
 
 //Troco a cultura do sistema para a localização desejada.
 using System.Globalization;
@@ -238,3 +239,33 @@ bool par = false;
 //if ternário
 par = n % 2 == 0;
 Console.WriteLine($"O Número {n} é " + (par ? "par" : "impar"));
+
+Console.WriteLine("---------------------------------------");
+
+List<Venda> listaVendas = new List<Venda>();
+DateTime dataAtual = DateTime.Now;
+
+//serializando um objeto
+Venda v1 = new Venda(1, "Lápis", 05.00M, dataAtual);
+Venda v2 = new Venda(2, "Papel", 06.00M, dataAtual);
+
+listaVendas.Add(v1);
+listaVendas.Add(v2);
+
+//converte o meu objeto em formato json
+string jsonVenda = JsonConvert.SerializeObject(listaVendas, Formatting.Indented);
+
+File.WriteAllText("Files/vendas.json", jsonVenda);
+Console.WriteLine(jsonVenda);
+
+Console.WriteLine("---------------------------------------");
+
+//Deserializar um objeto
+string conteudoArquivo = File.ReadAllText("Files/vendas.json");
+
+List<Venda> listaVenda = JsonConvert.DeserializeObject<List<Venda>>(conteudoArquivo);
+
+foreach(Venda i in listaVenda)
+{
+    Console.WriteLine($"ID: {i.Id} | Produto: {i.Produto} | Preço: {i.Preco.ToString("C", CultureInfo.CreateSpecificCulture("pt-br"))} | Data da Venda: {i.DataVenda.ToString("dd/MM/yyyy")} | Horário da Venda: {i.DataVenda.ToString("HH:mm")}");
+}
